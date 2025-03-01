@@ -13,7 +13,7 @@ export default function Main(){
         let preValue = DiceNumbers[0]?.number
         for(let i = 0; i<DiceNumbers.length; i++){
             AllDiceHeldStatus = (DiceNumbers[i].isHeld && AllDiceHeldStatus)
-            AllDiceSameValue = (preValue == DiceNumbers[i].number)
+            AllDiceSameValue = ((preValue == DiceNumbers[i].number) && AllDiceSameValue)
             preValue = DiceNumbers[i].number
         }
         if(AllDiceHeldStatus && AllDiceSameValue){
