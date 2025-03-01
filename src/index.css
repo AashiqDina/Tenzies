@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background-color: #0d1f2b;
+  padding: 2rem;
+  height: 100vh;
+}
+
+#root{
+  height: 100%;
+  width: 100%;
+  max-height: 25rem;
+  max-width: 25rem;
+}
+
+main {
+  background-color: #e7e7e7;
+  height: 100%;
+  border-radius: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.DiceCollection{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 1rem;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+.Dice{
+  background-color: white;
+  border-radius: 1rem;
+  text-align: center;
+  height: 3.5rem;
+  width: 3.5rem;
+  max-width: 3.5rem;
+  max-height: 3.5rem;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  margin: 0;
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+  font-family: Inter, serif;
+  cursor: pointer;
+}
+
+.RerollButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 3rem;
+  background-color: rgb(68, 68, 101);
+  color: #e7e7e7;
+  font-family: Inter, serif;
+  height: 3.3rem;
+  width: 7rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.15);
+}
+
+.Title{
+  font-family: Inter, serif;
+  text-align: center;
+}
+
+.Instructions{
+  font-family: Inter, serif;
+  text-align: center;
+}
